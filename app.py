@@ -20,7 +20,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = "https://pneumoscan-api-zxkp.onrender.com"
 
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
