@@ -20,7 +20,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-BACKEND_URL = "https://pneumoscan-api-zxkp.onrender.com"
+BACKEND_URL = "https://shivam1302-pneumoscan-api.hf.space"
 
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
