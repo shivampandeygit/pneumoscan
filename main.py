@@ -42,7 +42,8 @@ async def load_model():
     logger.info(f'Loading model: {MODEL_ID}')
     t0 = time.perf_counter()
     try:
-        classifier = pipeline('image-classification', model=MODEL_ID)
+        classifier = pipeline('image-classification', model=MODEL_ID, 
+                     cache_dir="/tmp/model_cache")
         model_load_time_ms = round((time.perf_counter() - t0) * 1000, 2)
         logger.info(f'Model loaded in {model_load_time_ms} ms')
     except Exception as e:
